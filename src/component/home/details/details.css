@@ -1,0 +1,90 @@
+.detail{
+    margin-top: 40px;
+}
+
+.details{
+    background-image:  linear-gradient(45deg, #0cc7b2,#1c7dbb) !important;
+    clip-path: polygon(0 9%, 100% 0%, 100% 91%, 0% 100%);
+    position: relative;
+    width: 100%;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    flex-direction: column;
+    padding: 8rem 2rem;
+}
+
+.detail .box1{
+    display: flex;
+    gap: 30px;
+    
+}
+.detail .box1 .box{
+    width: 300px;
+    background-color: #fff;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+    position: relative;
+    padding: 4rem 2rem 1rem 2rem;
+}
+.detail .box1 .box h1{
+    font-size: 22px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 10px;
+}
+.detail .box1 .box p{
+    text-align: center;
+    font-size: 16px;
+}
+.detail .box1 .box button {
+        border-radius: 5px;
+        padding: 15px 20px;
+        background-color: #1e72bc;
+        border: 1px solid #1e72bc;
+        font-size: 14px;
+        color: #fff;
+}
+.detail .box1 .box button:hover {
+   
+    background-color: #fff;
+    font-size: 17px;
+    color: #1e72bc;
+}
+
+.details .box1 .box>div{
+    margin-left: auto;
+    margin-right: auto;
+    display: contents;
+}
+.details .box img{
+    width: 100px;
+    position: absolute;
+    top: -15%;
+    background-color: #fff;
+    padding: 0.3rem;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px 1px rgba(128, 128, 128, 0.205);
+   
+}
+
+
+@media only screen and (max-width:980px) {
+    .detail .box1{
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .detail .box1 .box{
+        margin-bottom: 40px;
+    }
+}

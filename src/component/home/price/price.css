@@ -1,0 +1,92 @@
+.header_text{  
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 2.5rem;
+}
+.header_text span {
+    color: #1e72bc;
+}
+.table_price {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 0 2rem;
+    max-width: 1400px;
+    margin: auto;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.table_price .price_card {
+    border: 1px solid #dddcdc;
+    padding: 0.6rem;
+}
+.table_price .price_card .plan_name {
+    width: 100%;
+    background-color: #0aceb1;
+    color: #fff;
+    padding: 1.3rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+}
+.table_price .price_card:nth-child(even) .plan_name {
+    width: 100%;
+    background-color: #1e72bc;
+    color: #fff;
+    padding: 1.3rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+}
+.table_price .price_card .plan_price {
+    width: 50%;
+    margin: auto;
+    padding: 1.5rem;
+    text-align: center;
+    color: #1e72bc;
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+.table_price .price_card .plan_price h3 {
+    font-size: 2rem;
+}
+.table_price .price_card .plan_body {
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+.table_price .price_card .plan_body .btn {
+    background-color: #1e72bc;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #1e72bc;
+    border-radius: 2px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.table_price .price_card:nth-child(even) .plan_body .btn {
+    background-color: #0aceb1;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #0aceb1;
+    border-radius: 2px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:980px) {
+    .table_price {
+       
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

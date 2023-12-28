@@ -1,0 +1,85 @@
+.box3{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 0px;
+    flex-direction: row;
+    width: 100%;
+    padding:0 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.box3 .left3{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    gap: 80px;
+}
+
+.box3 .left3 .total{
+    display: flex;
+    gap:10px;
+    position: relative;
+}
+.box3 .left3 .total::before{
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid  rgba(131, 131, 131, 0.5333333333);
+}
+
+.box3 .left3 .total .icon i{
+    padding: 20px;
+    border: 1px solid #0aceb1;
+    color: #0aceb1;
+    border-radius: 50%;
+    font-size: 40px;
+    align-items: center;
+}
+.box3 .left3 .total .icon:hover i{
+    background-color: #1c78bb;
+}
+
+.box3 .left3 .total .des h4{
+    font-size: 16px;
+}
+.box3 .left3 .total .des p{
+    font-size: .8rem;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+.box3  .right3{
+    width: 25%;
+    color: transparent;
+}
+
+
+@media only screen and (max-width:980px) {
+    .ser{
+        font-size: 2rem;
+    }
+    .box3{
+        flex-direction: column;
+        gap: 60px;
+    }
+    .box3 .left3{
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+    }
+    .box3 .right3{
+        width: 100%;
+    }
+}
